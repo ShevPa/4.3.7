@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #96cafa;
+    padding: 0 20px;
+}
+.wrapper{
+    max-width: 400px;
+    margin: 100px auto 0 auto;
+}
+.title{
+    margin-bottom: 20px;
+}
+.wrapper .search{
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+}
+.search input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding:  0 40px 0 20px;
+    font-size: 16px;
+}
+.autocomplit{
+    max-height: 200px;
+    overflow-y: auto;
+    opacity: 0;
+}
+.autocomplit.active{
+    opacity: 1;
+}
+.autocomplit li{
+    list-style: none;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+
+}
+.autocomplit li:hover{
+    background: #efefef;
+}
+.autocomplit.active li{
+    display:block;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.list{
+    margin-top: 10px;
+    max-width: 400px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.list__item{
+    background-color: rgb(189, 211, 230);
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+}
+.list__item div{
+    margin-right: auto;
+}
+.list__button{  
+    background-color: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 60px;
+    margin-top: 10px;    
+}
+.list__button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s ;
+}
